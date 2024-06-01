@@ -1,0 +1,192 @@
+/* General Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', Arial, sans-serif;
+    box-sizing: border-box;
+}
+
+header {
+    background: #ff80ce;
+    color: #fff;
+    padding: 10px 0;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+header .logo a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.logo img {
+    border-radius: 50%;
+    height: 100px;
+}
+
+header .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+header .nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 400;
+}
+
+header .nav-links a:hover {
+    text-decoration: underline;
+}
+
+.hero {
+    text-align: center;
+    padding: 100px 20px;
+    background: #f4f4f4;
+}
+
+.hero h1 {
+    font-family: 'Just Another Hand';
+    margin: 0 0 10px;
+    font-size: 46px;
+    font-weight: 700;
+}
+
+.hero p {
+    margin: 0;
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.projects-section {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.projects-section h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.projects-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.project-card {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    width: 300px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.project-card:hover {
+    background-color: #ff80ce;
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px #ff80ce;
+    border-radius: 16px;
+    cursor: pointer;
+}
+.project-card img {
+    width: 100%;
+    height: auto;
+}
+
+.project-card h3 {
+    font-size: 24px;
+    margin: 16px;
+}
+
+.project-card p {
+    font-size: 16px;
+    margin: 0 16px 16px;
+}
+
+.project-card .links {
+    display: flex;
+    justify-content: space-between;
+    padding: 16px;
+}
+
+.project-card .links a {
+    text-decoration: none;
+    color: #007BFF;
+    font-weight: 500;
+}
+
+.project-card .links a:hover {
+    text-decoration: underline;
+}
+
+.about-section,
+.contact-section {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.about-section h2,
+.contact-section h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.about-section p {
+    font-size: 18px;
+    font-weight: 300;
+    text-align: justify;
+}
+.contact-section p {
+    text-align: center;
+}
+
+footer {
+    background: #ff80ce;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    header nav {
+        flex-direction: column;
+    }
+
+    header .nav-links {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .projects-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .project-card {
+        width: 100%;
+    }
+
+    footer {
+        position: relative;
+    }
+}
