@@ -289,7 +289,7 @@ footer p {
   /* Back to Top and Scroll Down Buttons */
 .scroll-btn {
     position: fixed;
-    right: 20px;
+    right: 50px;
     bottom: 80px;
     background-color: #ff80ce;
     color: #ffffff;
