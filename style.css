@@ -4,6 +4,7 @@ body {
     padding: 0;
     font-family: 'Montserrat', Arial, sans-serif;
     box-sizing: border-box;
+    overflow-x: hidden;
 }
 
 header {
@@ -31,21 +32,62 @@ header .logo a {
     height: 100px;
 }
 
+.logo:hover img,
+.hero:hover,
+.project-card:hover,
+.about-section:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px #ff80ce;
+    border-radius: 16px;
+    cursor: pointer;
+}
+
 header .nav-links {
     list-style: none;
     display: flex;
     gap: 20px;
 }
 
+header .nav-links li {
+    display: inline;
+}
+
 header .nav-links a {
     color: #fff;
     text-decoration: none;
     font-weight: 400;
+    padding: 10px 20px;
+    border-radius: 8px;
 }
 
 header .nav-links a:hover {
-    text-decoration: underline;
+    background-color: white;
+    color: #ff80ce;
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px #e846aa;
+    border-radius: 16px;
+    cursor: pointer;
 }
+
+.nav-links .active {
+    background-color: white;
+    color: #ff80ce;
+}
+
+.menu-icon {
+    display: none;
+    cursor: pointer;
+  }
+.menu-icon span {
+    color: white;
+}
+
+/* Styles for showing the menu when toggled */
+.nav-links.show {
+    display: flex;
+    border-radius: 8px;
+    padding: 30px;
+  }
 
 .hero {
     text-align: center;
@@ -69,6 +111,7 @@ header .nav-links a:hover {
 .projects-section {
     padding: 50px 20px;
     text-align: center;
+    margin-bottom: 50px;
 }
 
 .projects-section h2 {
@@ -92,13 +135,6 @@ header .nav-links a:hover {
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
-.project-card:hover {
-    background-color: #ff80ce;
-    transform: scale(1.05);
-    box-shadow: 0 8px 16px #ff80ce;
-    border-radius: 16px;
-    cursor: pointer;
-}
 .project-card img {
     width: 100%;
     height: auto;
@@ -136,6 +172,15 @@ header .nav-links a:hover {
     text-align: center;
 }
 
+#about {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    background: #ff80ce;
+    border-radius: 16px;
+    max-width: 600px;
+    margin: 0 auto;
+}
 .about-section h2,
 .contact-section h2 {
     font-size: 32px;
@@ -147,6 +192,7 @@ header .nav-links a:hover {
     font-size: 18px;
     font-weight: 300;
     text-align: justify;
+    padding: 20px;
 }
 .contact-section p {
     text-align: center;
@@ -169,13 +215,27 @@ footer p {
 /* Responsive Styles */
 @media (max-width: 768px) {
     header nav {
-        flex-direction: column;
+        flex-direction: row;
     }
 
     header .nav-links {
         flex-direction: column;
         align-items: center;
     }
+
+    header .nav-links a {
+        color: white;
+        font-size: 15pt;
+      }
+    
+      header .nav-links.show {
+        display: flex;
+      }
+    
+      .menu-icon {
+        display: block;
+        color: #363732;
+      }
 
     .projects-container {
         flex-direction: column;
@@ -190,3 +250,79 @@ footer p {
         position: relative;
     }
 }
+  
+  @media (max-width: 480px) {
+
+    header nav {
+        flex-direction: row;
+    }
+    
+    header .nav-links {
+      display: none;
+      flex-direction: column;
+      gap: 0;
+      background-color: #333;
+      position: relative;
+      top: 20px;
+      right: 0;
+      width: 100%;
+      text-align: center;
+      padding: 0;
+    }
+  
+    header .nav-links a {
+      color: white;
+      font-size: 15pt;
+    }
+  
+    header .nav-links.show {
+      display: flex;
+      gap: 10px;
+    }
+  
+    header .menu-icon {
+      display: block;
+      color: #363732;
+    }
+  }
+
+  /* Back to Top and Scroll Down Buttons */
+.scroll-btn {
+    position: fixed;
+    right: 20px;
+    bottom: 80px;
+    background-color: #ff80ce;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 14px;
+    display: none;
+    z-index: 1000;
+  }
+  
+  #back-to-top {
+    border-radius: 50%;
+    height: 70px;
+    width: 70px;
+    justify-content: center;
+    align-items: center;
+    bottom: 250px;
+  }
+  
+  #scroll-down {
+    bottom: 20px;
+  }
+  
+  .scroll-btn:hover {
+    background-color: black;
+  }
+  
+
+  @media (max-width: 768px) {
+    .scroll-btn {
+      font-size: 12px;
+      padding: 8px 16px;
+    }
+  }
