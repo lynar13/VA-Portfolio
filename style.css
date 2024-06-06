@@ -49,6 +49,9 @@ header .nav-links li a {
     cursor: pointer;
 }
 
+.logo:hover img {
+    box-shadow: 0 8px 16px #ffffff;
+}
 header .nav-links {
     font-size: 30px;
     font-family: 'Just Another Hand';
