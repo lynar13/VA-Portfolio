@@ -54,7 +54,7 @@ const projects = [
         description: "Square Eyes is a responsive website designed and developed as part of the HTML & CSS course assignment. The project showcases a functional, multi-page site built from scratch without the use of frameworks, emphasizing semantic HTML, DRY CSS principles, and accessibility standards.",
         links: [
             { url: "https://github.com/NoroffFEU/html-css-course-assignment-lynar13", text: "GitHub Repo" },
-            { url: "https://norofffeu.github.io/html-css-course-assignment-lynar13/home.html", text: "Live Site" }
+            { url: "https://norofffeu.github.io/html-css-course-assignment-lynar13/home.html", text: "Live Demo" }
         ]
     },
     {
@@ -63,7 +63,7 @@ const projects = [
         description: "A museum website that provides information about exhibitions, events, and museum news. It offers an engaging user experience with responsive design and accessibility features.",
         links: [
             { url: "https://github.com/lynar13/nannestad-science-museum", text: "GitHub Repo" },
-            { url: "https://lynar13.github.io/nannestad-science-museum/", text: "Live Site" }
+            { url: "https://lynar13.github.io/nannestad-science-museum/", text: "Live Demo" }
         ]
     },
     {
@@ -72,7 +72,7 @@ const projects = [
         description: "A blogging platform where users can view, create, edit, and delete blog posts.",
         links: [
             { url: "https://github.com/NoroffFEU/FED1-PE1-lynar13", text: "GitHub Repo" },
-            { url: "https://norofffeu.github.io/FED1-PE1-lynar13/", text: "Live Site" }
+            { url: "https://norofffeu.github.io/FED1-PE1-lynar13/", text: "Live Demo" }
         ]
     }
 ];

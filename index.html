@@ -15,10 +15,8 @@
 <body>
     <header>
         <nav>
-            <div class="logo">
-                <a href="index.html"><img src="images/logo.jpeg" alt="logo">Lyn A</a>
-            </div>
             <ul class="nav-links">
+                <li><a href="#hero" class="nav-item">Home</a></li>
                 <li><a href="#projects" class="nav-item">Projects</a></li>
                 <li><a href="#about" class="nav-item">About</a></li>
                 <li><a href="#contact" class="nav-item">Contact</a></li>
@@ -29,13 +27,18 @@
         </nav>
     </header>
 
-    <section class="hero">
-        <h1>Welcome to My Portfolio</h1>
-        <p>Check out some of my projects below</p>
+    <section id="hero" class="hero">
+        <div class="logo">
+            <a href="index.html"><img src="images/logo.jpeg" alt="logo">Lyn A</a>
+        </div>
+        <div>
+            <p>Hi there! I'm Lyn A, a passionate Front-End Developer student based in Oslo, Norway.</p>
+            
+        </div>
     </section>
 
     <section id="projects" class="projects-section">
-        <h2>My Projects</h2>
+        <h1>My Projects</h1>
         <div class="projects-container">
             <!-- Project 1: Square Eyes -->
             <div class="project-card">
@@ -44,7 +47,7 @@
                 <p>Square Eyes is a responsive website designed and developed as part of the Design, HTML & CSS course assignment...</p>
                 <div class="links">
                     <a href="https://github.com/NoroffFEU/html-css-course-assignment-lynar13" target="_blank">GitHub Repo</a>
-                    <a href="https://norofffeu.github.io/html-css-course-assignment-lynar13/home.html" target="_blank">Live Site</a>
+                    <a href="https://norofffeu.github.io/html-css-course-assignment-lynar13/home.html" target="_blank">Live Demo</a>
                 </div>
             </div>
 
@@ -55,7 +58,7 @@
                 <p>A museum website that provides information about exhibitions, events, and museum news.</p>
                 <div class="links">
                     <a href="https://github.com/lynar13/nannestad-science-museum" target="_blank">GitHub Repo</a>
-                    <a href="https://lynar13.github.io/nannestad-science-museum/" target="_blank">Live Site</a>
+                    <a href="https://lynar13.github.io/nannestad-science-museum/" target="_blank">Live Demo</a>
                 </div>
             </div>
 
@@ -66,7 +69,7 @@
                 <p>A blogging platform where users can view, create, edit, and delete blog posts.</p>
                 <div class="links">
                     <a href="https://github.com/NoroffFEU/FED1-PE1-lynar13" target="_blank">GitHub Repo</a>
-                    <a href="https://norofffeu.github.io/FED1-PE1-lynar13/" target="_blank">Live Site</a>
+                    <a href="https://norofffeu.github.io/FED1-PE1-lynar13/" target="_blank">Live Demo</a>
                 </div>
             </div>
         </div>
@@ -74,7 +77,10 @@
 
     <section id="about" class="about-section">
         <h2>About Me</h2>
-        <p>Hi there! I'm Lyn A, a passionate Front-End Developer student. My journey into the world of web development started with a curiosity for how websites are built and a desire to create engaging user experiences. I enjoy translating designs into functional, interactive, and visually appealing web applications.</p>
+        <div class="logo">
+            <a href="index.html"><img src="images/logo.jpeg" alt="logo"></a>
+        </div>
+        <p>Hi there! I'm Lyn A, a passionate Front-End Developer student based in Oslo, Norway. <br><br>My journey into the world of web development started with a curiosity for how websites are built and a desire to create engaging user experiences. I enjoy translating designs into functional, interactive, and visually appealing web applications.</p>
 
         <p>With a strong foundation in HTML, CSS, and JavaScript, I am continuously learning and expanding my skill set. I have experience working with various front-end frameworks and libraries, and I'm particularly interested in responsive design and accessibility.</p>
             
@@ -85,13 +91,11 @@
     <section id="contact" class="contact-section">
         <h2>Contact</h2>
         <p>Email: <a href="mailto:your.email@example.com">babyjelly13@gmail.com</a></p>
-        <ul class="social-icons">
-            <li><p>CONNECT WITH ME</p></li>
-            <li class="soc-med">
-                <a href=""><img src="images/linkedin-svgrepo-com.svg" alt="linkedin"></a>
-                <a href=""><img src="images/github-142-svgrepo-com.svg" alt="github"></a>
-            </li>
-        </ul>
+        <div class="social-icons">
+            <p>CONNECT WITH ME</p>
+            <a href="https://github.com/lynar13" target="_blank" ><img src="images/github-142-svgrepo-com.svg" alt="github"></a>
+        </div>
+        
     </section>
 
     <footer>

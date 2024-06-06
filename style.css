@@ -6,10 +6,13 @@ body {
     box-sizing: border-box;
     overflow-x: hidden;
 }
-
+h1 {
+    font-family: 'Just Another Hand';
+    font-size: 66px;
+    font-weight: 700;
+}
 header {
-    background: #ff80ce;
-    color: #fff;
+    background: #ffffff;
     padding: 10px 0;
 }
 
@@ -20,7 +23,11 @@ header nav {
     padding: 0 20px;
 }
 
-header .logo a {
+header .nav-links li a {
+    color: #ee8ec9;
+}
+
+.logo a {
     color: #fff;
     text-decoration: none;
     font-size: 24px;
@@ -43,7 +50,7 @@ header .logo a {
 }
 
 header .nav-links {
-    font-size: 40px;
+    font-size: 30px;
     font-family: 'Just Another Hand';
     list-style: none;
     display: flex;
@@ -72,8 +79,8 @@ header .nav-links a:hover {
 }
 
 .nav-links .active {
-    background-color: white;
-    color: #ff80ce;
+    background-color: #ee8ec9;
+    color: #ffffff;
 }
 
 .menu-icon {
@@ -81,7 +88,7 @@ header .nav-links a:hover {
     cursor: pointer;
   }
 .menu-icon span {
-    color: white;
+    color: #ee8ec9;
 }
 
 /* Styles for showing the menu when toggled */
@@ -93,41 +100,22 @@ header .nav-links a:hover {
   }
 
 .hero {
+    color: #ffffff;
     text-align: center;
     padding: 100px 20px;
-    background: #f4f4f4;
-}
-
-.hero h1 {
-    font-family: 'Just Another Hand';
-    margin: 0 0 10px;
-    font-size: 46px;
-    font-weight: 700;
-}
-.hero:hover h1 {
-    color: #ff80ce;
-    font-size: 50pt;
-    transform: scale(1.05);
-    box-shadow: 0 8px 16px #ff80ce;
-    border-radius: 16px;
-    cursor: pointer;
+    background: #ee8ec9;
 }
 
 .hero p {
-    margin: 0;
     font-size: 18px;
     font-weight: 300;
+    font-style: italic;
 }
 
 .projects-section {
     padding: 50px 20px;
     text-align: center;
     margin-bottom: 50px;
-}
-
-.projects-section h2 {
-    font-size: 32px;
-    margin-bottom: 20px;
 }
 
 .projects-container {
@@ -164,7 +152,7 @@ header .nav-links a:hover {
 }
 
 .project-card:hover h3 {
-    color: #ff80ce;
+    color: #ee8ec9;
     transform: scale(1.05);
     box-shadow: 0 8px 16px #e846aa;
     border-radius: 16px;
@@ -186,7 +174,7 @@ header .nav-links a:hover {
     border-radius: 16px;
     background-color: #ff80ce;
     text-decoration: none;
-    color: #007BFF;
+    color: white;
     font-weight: 500;
     padding: 10px;
 }
@@ -212,7 +200,7 @@ header .nav-links a:hover {
     display: block;
     justify-content: center;
     align-items: center;
-    background: #ff80ce;
+    background: #ee8ec9;
     border-radius: 16px;
     max-width: 600px;
     margin: 0 auto;
@@ -235,8 +223,8 @@ header .nav-links a:hover {
 }
 
 footer {
-    background: #ff80ce;
-    color: #fff;
+    background: #ffffff;
+    color: #363732;
     text-align: center;
     padding: 20px;
     position: fixed;
@@ -246,16 +234,13 @@ footer {
 
 .social-icons {
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 0 auto;
 }
 
-.social-icons li {
-    list-style-type: none;
+.soc-med a {
+    text-align: center;
 }
 
-.soc-med img {
+.social-icons img {
     width: 50px;
 }
 
@@ -358,7 +343,6 @@ footer p {
     
       .menu-icon {
         display: block;
-        color: #363732;
       }
 
     .projects-container {
