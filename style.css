@@ -100,16 +100,30 @@ header .nav-links a:hover {
   }
 
 .hero {
+    justify-content: center;
+    align-items: center;
     color: #ffffff;
-    text-align: center;
-    padding: 100px 20px;
+    padding: 100px 50px;
     background: #ee8ec9;
+    text-align: center;
 }
 
 .hero p {
     font-size: 18px;
     font-weight: 300;
     font-style: italic;
+}
+
+.hero-icons {
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-icons img {
+    width: 30px;
 }
 
 .projects-section {
