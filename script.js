@@ -1,9 +1,16 @@
-// JavaScript to handle the active link state
 document.addEventListener("DOMContentLoaded", function() {
-    const navItems = document.querySelectorAll('.nav-item');
+    const navItems = document.querySelectorAll('.nav-item a');
 
     navItems.forEach(item => {
-        item.addEventListener('click', function() {
+        item.addEventListener('click', function(event) {
+            event.preventDefault(); // Prevent default anchor click behavior
+            const targetId = this.getAttribute('href').substring(1); // Get the target section id
+            const targetSection = document.getElementById(targetId);
+
+            if (targetSection) {
+                targetSection.scrollIntoView({ behavior: 'smooth' }); // Scroll to the target section smoothly
+            }
+
             navItems.forEach(link => link.classList.remove('active'));
             this.classList.add('active');
         });
@@ -33,7 +40,6 @@ window.addEventListener('scroll', () => {
         backToTopButton.style.display = 'none';
     }
 });
-
 
 // Modal Elements
 const modal = document.getElementById("project-modal");

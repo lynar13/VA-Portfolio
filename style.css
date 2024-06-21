@@ -21,6 +21,7 @@ header nav {
     justify-content: space-between;
     align-items: center;
     padding: 0 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-radius 0.3s ease;
 }
 
 header .nav-links li a {
@@ -39,8 +40,6 @@ header .nav-links li a {
     height: 100px;
 }
 
-.logo:hover img,
-.hero:hover,
 .project-card:hover,
 .about-section:hover {
     transform: scale(1.05);
@@ -149,6 +148,11 @@ header .nav-links a:hover {
     overflow: hidden;
     width: 300px;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.project-card,
+.about-section {
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-radius 0.3s ease;
 }
 
 .project-card img {
