@@ -16,8 +16,10 @@ Welcome to My Portfolio! I'm Lyn, a passionate Front-End Developer, dedicated on
 - [Nannestad Science Museum](https://lynar13.github.io/nannestad-science-museum/): The Nannestad Science Museum website is designed to provide information about the museum's exhibits, events, and services. It offers an engaging user experience with responsive design and accessibility features.
 - [Square Eyes](https://norofffeu.github.io/html-css-course-assignment-lynar13/home.html)): Square Eyes is a responsive website designed and developed as part of the HTML & CSS course assignment. The project showcases a functional, multi-page site built from scratch without the use of frameworks, emphasizing semantic HTML, DRY CSS principles, and accessibility standards.
 
+## 🌐 Visit My Portfolio 
+- [My Portfolio](https://lynar13.github.io/My-Portfolio/)
 
-## 🌐 Connect with me
+## 💌 Connect with me
 - [Email](babyjelly13@gmail.com)
 
 
