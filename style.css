@@ -423,11 +423,17 @@ footer p {
     background-color: #ff80ce;
     color: #ffffff;
     border-radius: 5px black;
-    padding: 10px 20px;
     cursor: pointer;
     font-size: 14px;
     display: none;
     z-index: 1000;
+  }
+
+  .scroll-btn span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 60px;
   }
   
   #back-to-top {
@@ -451,6 +457,10 @@ footer p {
   @media (max-width: 768px) {
     .scroll-btn {
       font-size: 12px;
-      padding: 8px 16px;
+      right: 60px;
+    }
+
+    .scroll-btn span {
+      font-size: 50px;
     }
   }
