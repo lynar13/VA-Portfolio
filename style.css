@@ -11,6 +11,10 @@ h1 {
     font-size: 66px;
     font-weight: 700;
 }
+.hero h1 {
+    font-family: 'Montserrat', Arial, sans-serif;
+    font-size: 40px;
+}
 header {
     background: #ffffff;
     padding: 10px 0;
@@ -52,8 +56,7 @@ header .nav-links li a {
     box-shadow: 0 8px 16px #ffffff;
 }
 header .nav-links {
-    font-size: 30px;
-    font-family: 'Just Another Hand';
+    font-size: 20px;
     list-style: none;
     display: flex;
     gap: 20px;
@@ -108,6 +111,7 @@ header .nav-links a:hover {
     padding: 100px 50px;
     background: #ee8ec9;
     text-align: center;
+    padding-top: 30px;
 }
 
 .hero p {
@@ -209,6 +213,30 @@ header .nav-links a:hover {
     cursor: pointer;
 }
 
+/* Skills */
+#skills {
+    background-color: #ee8ec9;
+    color: white;
+    padding: 50px 20px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+#skills h2 {
+    font-family: 'Just Another Hand', sans-serif;
+    font-size: 66px;
+}
+
+.skills {
+    display: flex;
+    justify-content: space-around;
+    margin: 50px auto;
+}
+.skills-section {
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: left;
+}
+
 .about-section,
 .contact-section {
     padding: 50px 20px;
@@ -236,7 +264,7 @@ header .nav-links a:hover {
 .about-section p {
     font-size: 18px;
     font-weight: 500;
-    text-align: justify;
+    text-align: center;
     padding: 20px;
 }
 .contact-section p {
