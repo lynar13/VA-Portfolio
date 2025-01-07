@@ -55,6 +55,15 @@ const projectCards = document.querySelectorAll(".project-card");
 // Project Details
 const projects = [
     {
+        img: "images/auction-house.png",
+        title: "Auction House",
+        description: "Auction House is a responsive website designed and developed for users to login and register an account, view, create and edit listings. The project showcases a functional, multi-page site built with Vite.",
+        links: [
+            { url: "https://lynar13.github.io/auction-website", text: "GitHub Repo" },
+            { url: "https://lynar13.github.io/auction-website/", text: "Live Demo" }
+        ]
+    },
+    {
         img: "images/square-eyes-sc3.png",
         title: "Square Eyes",
         description: "Square Eyes is a responsive website designed and developed as part of the HTML & CSS course assignment. The project showcases a functional, multi-page site built from scratch without the use of frameworks, emphasizing semantic HTML, DRY CSS principles, and accessibility standards.",
